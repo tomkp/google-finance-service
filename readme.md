@@ -1,7 +1,13 @@
 
-#Examples
+# google-finance-service
 
-## Symbols as an Array
+
+  [![Build Status](https://travis-ci.org/tomkp/google-finance-service.png)](https://travis-ci.org/tomkp/google-finance-service)
+
+
+##Examples
+
+### Symbols as an Array
 
 ```
     var service = require('google-finance-service');
@@ -13,7 +19,7 @@
 ```
 
 
-## Symbols as a String
+### Symbols as a String
 
 ```
     var service = require('google-finance-service');

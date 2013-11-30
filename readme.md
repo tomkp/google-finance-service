@@ -3,7 +3,7 @@
 
     Simple browser-friendly micro service for the google finance api
 
-    [![Build Status](https://travis-ci.org/tomkp/google-finance-service.png)](https://travis-ci.org/tomkp/google-finance-service)
+  [![Build Status](https://travis-ci.org/tomkp/google-finance-service.png)](https://travis-ci.org/tomkp/google-finance-service)
 
 
 ### Symbols as an Array

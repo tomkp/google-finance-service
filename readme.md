@@ -1,7 +1,7 @@
 
 # google-finance-service
 
-    Simple browser friendly micro service for google finance api
+    Simple browser-friendly micro service for the google finance api
 
     [![Build Status](https://travis-ci.org/tomkp/google-finance-service.png)](https://travis-ci.org/tomkp/google-finance-service)
 

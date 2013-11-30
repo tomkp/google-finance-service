@@ -1,7 +1,8 @@
 {
     "name": "google-finance-service",
-    "version": "0.0.0",
-    "description": "",
+    "version": "0.0.1",
+    "description": "Simple browser-friendly micro service for the google finance api",
+    "keywords": ["browser", "client", "google", "finance", "micro-service"],
     "main": "index.js",
     "directories": {
         "test": "test"
@@ -21,7 +22,7 @@
         "url": "git://github.com/tomkp/google-finance-service"
     },
     "author": "tomkp",
-    "license": "BSD-2-Clause",
+    "license": "MIT",
     "bugs": {
         "url": "https://github.com/tomkp/google-finance-service/issues"
     }

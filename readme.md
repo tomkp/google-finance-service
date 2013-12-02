@@ -9,14 +9,29 @@
 ### Symbols as an Array
 
 ```
-    var service = require('google-finance-service');
-    service(['LON:TSCO', 'LON:RDSA'], function (data) { /* success */ }, function (data) { /* error */ });
+    var GoogleFinance = require('google-finance-service');
+    var stocks = new GoogleFinance(['LON:TSCO', 'LON:RDSA']);
+    stock.load(
+        function (data) {
+            /* success */
+        },
+        function (data) {
+            /* error */
+    });
+
 ```
 
 
 ### Symbols as a String
 
 ```
-    var service = require('google-finance-service');
-    service('LON:TSCO,LON:RDSA', function (data) { /* success */ }, function (data) { /* error */ });
+    var GoogleFinance = require('google-finance-service');
+    var stocks = new GoogleFinance('LON:TSCO,LON:RDSA');
+    stocks.load(
+         function (data) {
+             /* success */
+         },
+         function (data) {
+             /* error */
+     });
 ```

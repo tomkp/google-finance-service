@@ -1,12 +1,15 @@
 var assert = require('assert');
 var $ = require('jquery');
-var service = require('../lib/google-finance-service.js');
+var GoogleFinance = require('../lib/google-finance-service.js');
+
+
 
 describe('Google Finance Service', function () {
 
     it('fetches for comma separated list of symbols', function (done) {
 
-        service('LON:TSCO,NASDAQ:GOOG', function (data) {
+        var stocks = new GoogleFinance('LON:TSCO,NASDAQ:GOOG');
+        stocks.load(function (data) {
             console.info('success', data);
             assert.equal(2, data.length);
             assert.equal('Tesco PLC', data[0].name);
@@ -20,7 +23,8 @@ describe('Google Finance Service', function () {
 
     it('fetches for array of symbols', function (done) {
 
-        service(['LON:TSCO', 'NASDAQ:GOOG'], function (data) {
+        var stocks = new GoogleFinance(['LON:TSCO', 'NASDAQ:GOOG']);
+        stocks.load(function (data) {
             console.info('success', data);
             assert.equal(2, data.length);
             assert.equal('Tesco PLC', data[0].name);

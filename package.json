@@ -1,6 +1,6 @@
 {
     "name": "google-finance-service",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "Simple browser-friendly micro service for the google finance api",
     "keywords": ["browser", "client", "google", "finance", "micro-service"],
     "main": "index.js",
